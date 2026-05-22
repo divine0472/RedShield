@@ -22,7 +22,7 @@ Prerequisites
 •	pip package manager
 Installation
 # Clone the repository
-git clone https://github.com/yourusername/redshield.git
+git clone https://github.com/divine0472/RedShield.git
 cd redshield
 
 # Install dependencies
