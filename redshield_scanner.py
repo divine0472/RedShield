@@ -19,7 +19,7 @@ BASE_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RedShield - OWASP Top 10 Security Scanner</title>
+    <title>BlueShield - OWASP Top 10 Security Scanner</title>
     <style>
         :root {
             --primary-red: #dc2626;
@@ -458,7 +458,7 @@ BASE_TEMPLATE = """
         {{ content | safe }}
     </div>
     <div class="footer">
-        <strong>RedShield</strong> &mdash; Authorized Security Testing Only. Use responsibly.
+        <strong>BlueShield</strong> &mdash; Authorized Security Testing Only. Use responsibly.
     </div>
     <script>
         function toggleVuln(id) {
@@ -774,7 +774,7 @@ class SecurityScanner:
         self.results = []
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'RedShield-Security-Scanner/1.0 (Authorized Testing)'
+            'User-Agent': 'BlueShield-Security-Scanner/1.0 (Authorized Testing)'
         })
 
     def run_all_checks(self):
@@ -2010,7 +2010,7 @@ def api_test():
 
 if __name__ == '__main__':
     print("=" * 60)
-    print("  RedShield - OWASP Top 10 Security Scanner")
+    print("  BlueShield - OWASP Top 10 Security Scanner")
     print("=" * 60)
     print("  Starting server on http://0.0.0.0:5000")
     print("  Press Ctrl+C to stop")

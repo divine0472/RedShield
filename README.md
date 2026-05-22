@@ -1,5 +1,4 @@
-# RedShield
-🔴 RedShield — OWASP Top 10 Web Application & API Security Scanner
+🔵 BlueShield — OWASP Top 10 Web Application & API Security Scanner
    
 A comprehensive, web-based penetration testing tool for discovering and reproducing OWASP Top 10 vulnerabilities in web applications and APIs.
 Features • Installation • Usage • Vulnerabilities • API Testing • Screenshots • Disclaimer
@@ -22,8 +21,8 @@ Prerequisites
 •	pip package manager
 Installation
 # Clone the repository
-git clone https://github.com/divine0472/RedShield.git
-cd redshield
+git clone https://github.com/divine0472/blueshield.git
+cd blueshield
 
 # Install dependencies
 pip install -r requirements.txt
@@ -31,7 +30,7 @@ pip install -r requirements.txt
 # Or install manually
 pip install flask requests
 Running the Scanner
-python redshield_scanner.py
+python blueshield_scanner.py
 Then open your browser and navigate to:
 http://localhost:5000
 ________________________________________
@@ -71,7 +70,7 @@ API Injection Tests
 •	Path Traversal — Directory traversal for Unix and Windows systems
 ________________________________________
 📋 Example Reproduction Output
-When RedShield finds a vulnerability, it provides everything you need to reproduce it:
+When BlueShield finds a vulnerability, it provides everything you need to reproduce it:
 Sample: SQL Injection Finding
 ┌─────────────────────────────────────────────────────────────┐
 │  A03 - Injection (SQL/NoSQL/Command)        [CRITICAL]      │
@@ -112,8 +111,8 @@ curl Command:
     -d '{"name":"'\'' OR '\''1'\''='\''1"}'
 ________________________________________
 🏗️ Project Structure
-redshield/
-├── redshield_scanner.py    # Main Flask application (all-in-one)
+blueshield/
+├── blueshield_scanner.py    # Main Flask application (all-in-one)
 ├── requirements.txt        # Python dependencies
 ├── README.md              # This file
 └── LICENSE                # MIT License
@@ -133,7 +132,7 @@ export REDSHIELD_UA="Custom-Security-Scanner/1.0"
 ________________________________________
 🔒 Security & Legal
 ⚠️ IMPORTANT DISCLAIMER
-RedShield is intended for authorized security testing only.
+BlueShield is intended for authorized security testing only.
 •	✅ DO scan applications you own
 •	✅ DO scan applications you have explicit written authorization to test
 •	❌ DO NOT scan third-party websites without permission
@@ -170,4 +169,4 @@ ________________________________________
 •	PortSwigger Web Security Academy for vulnerability research
 •	The open-source security community for payload databases and testing methodologies
 ________________________________________
-Built with ❤️ for defensive security professionals RedShield — Find it. Reproduce it. Fix it.
+Built with ❤️ for defensive security professionals BlueShield — Find it. Reproduce it. Fix it.
